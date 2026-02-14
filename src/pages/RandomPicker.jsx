@@ -8,12 +8,6 @@ const ITEMS = [
   { name: '해바라기-소', image: `${base}images/1.jpg` },
   { name: '해바라기-초소+컵받침', image: `${base}images/2.jpg` },
   { name: '거북이', image: `${base}images/3.jpg` },
-  { name: '강아지', image: `${base}images/4.jpg` },
-  { name: '고양이', image: `${base}images/5.jpg` },
-  { name: '사과', image: `${base}images/6.jpg` },
-  { name: '바나나', image: `${base}images/7.jpg` },
-  { name: '달', image: `${base}images/8.jpg` },
-  { name: '별', image: `${base}images/9.jpg` },
 ]
 
 function getRandomItem() {
