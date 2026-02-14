@@ -5,15 +5,18 @@ import App from './App'
 import RandomPicker from './pages/RandomPicker'
 import './index.css'
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-    children: [
-      { index: true, element: <RandomPicker /> },
-    ],
-  },
-])
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <App />,
+      children: [
+        { index: true, element: <RandomPicker /> },
+      ],
+    },
+  ],
+  { basename: '/PickMe' }
+)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
