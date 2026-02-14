@@ -15,7 +15,7 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: '/PickMe' }
+  { basename: import.meta.env.PROD ? '/PickMe' : '' }
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
